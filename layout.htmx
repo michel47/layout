@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family={{font-readable}}">
+<style>
+body {
+  /* background: yellow; */
+  /* background-image: URL(http://ipfs.io/ipfs/z8bvj1SQiwC5KD9d5Y9JxJ9F91mYgtkaX/fallback.png), */
+  background-image: URL(http://ipfs.io/ipfs/z8bviz4PoB3UHiDsSuk3PVTRedNHSXGQD/fallback.png),
+  linear-gradient(to left, white,lightblue);
+  background-repeat: no-repeat, repeat;
+  background-attachment: fixed;
+  background-position: bottom right, center;
+
+  font-family: Verdana;
+}
+div {
+ font-family: {{font-readable}};
+}
+img { max-height: 720px; }
+</style>
+<link href="{{file.css}}" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family={{font-other}}">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family={{font-signature}}">
+</head>
+<body>
+<div class=layer></div>
+<div class=content id=first>
+<include src={{file.hte}}><pre>include html source here !</pre>
+<h4>Text</h4>
+<p style="font-family: {{font-other}}, courier;">
+
+<pre>--nbsp;
+<small><span style="font-family: {{font-signature}};">Iggy G. Lake</span></small>
+</include></div>
+
+</div>
+</body>
+<!-- vim: nospell
+
+--- # --
+LIB: "$HOME/GITrepo/Layout"
+layout:
+ - "bground.yml"
+ - libraries.yml
+ - "{{LIB}}/fonts.yml"
+ - ceres.yml
+...
+
+-->
